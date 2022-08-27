@@ -1,13 +1,16 @@
 import React from "react";
-import ToDo from "./components/todo/todo";
-import "bootstrap/dist/css/bootstrap.css";
 import "./App.scss";
+import ToDo from "./components/todo/todo";
+
+import Settings from "./components/context/settings";
 
 function App() {
   return (
     <>
       <div>
-        <ToDo />
+        <Settings>
+          <ToDo />
+        </Settings>
       </div>
     </>
   );
